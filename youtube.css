@@ -1,0 +1,135 @@
+.link{
+  text-decoration: none;
+  color: black;
+  cursor: pointer;
+}
+.profile-link{
+  text-decoration: none;
+  color: rgb(96, 96, 96);
+  cursor: pointer;
+}
+.thumbnail
+{
+  width: 100%;
+  object-fit: contain;
+  margin-bottom: 0;
+  z-index: 0;
+}
+.thumbnail-column{
+  position: relative;
+  cursor: pointer;
+}
+.time{
+  position: absolute;
+  background-color: black;
+  color: white;
+  font-family: roboto, arial;
+  font-size: 12px;
+  font-weight: 500;
+  padding: 4px;
+  font-weight: bold;
+  bottom: 10px;
+  right: 5px;
+  border-radius: 2px;
+}
+.video-preview{
+  display: grid;
+  grid-template-columns: 50px 1fr;
+  
+}
+
+.profile-pic{
+  height: 36px;
+  width: 36px;
+  object-fit: contain;
+  border-radius: 25px;
+  margin-top: 12px;
+  cursor: pointer;
+}
+.description{
+  width: 100%;
+  font-weight: 500;
+  font-size: 13.5px;
+  margin-top: 12px;
+  margin-bottom: 14px;
+  line-height: 20px;
+}
+.yt-name{
+  font-size: 12px;
+  margin-top: 12px;
+  
+}
+.vdo-details{
+  color: rgb(96, 96, 96);
+  font-size: 12px;
+  margin-top: 4px;
+  
+}
+.grid{
+  display: grid;
+  column-gap: 30px;
+  row-gap: 25px;
+  margin-right: 30px;
+  margin-left: 14px;
+  z-index: 0;
+}
+@media (min-width: 851px) and (max-width: 1099px) {
+  .grid{
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+}
+@media (max-width: 850px){
+  .grid{
+    grid-template-columns: 1fr 1fr;
+  }
+}
+@media (min-width: 1100px){
+  .grid{
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+  }
+}
+
+.popup-channel-container{
+  display: inline-block;
+  position: relative;
+  color: black;
+  z-index: 0;
+}
+.popup-channel-details{
+  display: flex;
+  white-space: nowrap;
+  position: absolute;
+  top: 50px;
+  left: 0;
+  background-color: white;
+  margin-top: 6px;
+  box-shadow: 1px 1px 5px rgba(0,0,0,0.45);
+  border-radius: 5px;
+  padding: 10px 14px;
+  pointer-events: none;
+  opacity: 0;
+  z-index: 100;
+  transition: opacity 0.25s;
+}
+.popup-channel-container:hover .popup-channel-details{
+  opacity: 1;
+}
+.pic{
+  height: 40px;
+  width: 40px;
+  border-radius: 25px;
+  margin-right: 10px;
+}
+.details{
+  margin-top: 5px;
+}
+.name{
+  font-weight: bold;
+  font-size: 16px;
+  margin-bottom: 3px;
+
+}
+.subs{
+  color: gray;
+  font-size: 14px;
+}
